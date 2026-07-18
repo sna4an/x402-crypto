@@ -1,47 +1,726 @@
 {
   "openapi": "3.1.0",
-  "info": {"contact": {"email": "sna4an@proton.me"},
+  "info": {
+    "contact": {
+      "email": "sna4an@proton.me"
+    },
     "title": "x402 Crypto APIs",
     "version": "1.0.0",
     "description": "Paid crypto API endpoints powered by x402 micropayments."
   },
-  "servers": [{"url": "https://x402-crypto.vercel.app"}],
+  "servers": [
+    {
+      "url": "https://x402-crypto.vercel.app"
+    }
+  ],
   "x402": {
     "accepts": [
-      {"scheme":"exact","network":"base-sepolia","maxAmountRequired":"0.075000","resource":"https://x402-crypto.vercel.app/api/crypto-news","mimeType":"application/json","payTo":"0x5e6E0aa1dE2FD4A4def32CD39aD3F775461E512c","extra":{"name":"USD Coin","version":"2"}},
-      {"scheme":"exact","network":"base-sepolia","maxAmountRequired":"0.075000","resource":"https://x402-crypto.vercel.app/api/crypto-news51","mimeType":"application/json","payTo":"0x5e6E0aa1dE2FD4A4def32CD39aD3F775461E512c","extra":{"name":"USD Coin","version":"2"}},
-      {"scheme":"exact","network":"base-sepolia","maxAmountRequired":"0.075000","resource":"https://x402-crypto.vercel.app/api/crypto-news16","mimeType":"application/json","payTo":"0x5e6E0aa1dE2FD4A4def32CD39aD3F775461E512c","extra":{"name":"USD Coin","version":"2"}},
-      {"scheme":"exact","network":"base-sepolia","maxAmountRequired":"0.075000","resource":"https://x402-crypto.vercel.app/api/crypto-news54","mimeType":"application/json","payTo":"0x5e6E0aa1dE2FD4A4def32CD39aD3F775461E512c","extra":{"name":"USD Coin","version":"2"}},
-      {"scheme":"exact","network":"base-sepolia","maxAmountRequired":"0.050000","resource":"https://x402-crypto.vercel.app/api/password-gen","mimeType":"application/json","payTo":"0x5e6E0aa1dE2FD4A4def32CD39aD3F775461E512c","extra":{"name":"USD Coin","version":"2"}},
-      {"scheme":"exact","network":"base-sepolia","maxAmountRequired":"0.100000","resource":"https://x402-crypto.vercel.app/api/apiton","mimeType":"application/json","payTo":"0x5e6E0aa1dE2FD4A4def32CD39aD3F775461E512c","extra":{"name":"USD Coin","version":"2"}},
-      {"scheme":"exact","network":"base-sepolia","maxAmountRequired":"0.100000","resource":"https://x402-crypto.vercel.app/api/crypto-exchange","mimeType":"application/json","payTo":"0x5e6E0aa1dE2FD4A4def32CD39aD3F775461E512c","extra":{"name":"USD Coin","version":"2"}},
-      {"scheme":"exact","network":"base-sepolia","maxAmountRequired":"0.100000","resource":"https://x402-crypto.vercel.app/api/screener-official","mimeType":"application/json","payTo":"0x5e6E0aa1dE2FD4A4def32CD39aD3F775461E512c","extra":{"name":"USD Coin","version":"2"}},
-      {"scheme":"exact","network":"base-sepolia","maxAmountRequired":"0.100000","resource":"https://x402-crypto.vercel.app/api/screener","mimeType":"application/json","payTo":"0x5e6E0aa1dE2FD4A4def32CD39aD3F775461E512c","extra":{"name":"USD Coin","version":"2"}},
-      {"scheme":"exact","network":"base-sepolia","maxAmountRequired":"0.125000","resource":"https://x402-crypto.vercel.app/api/coinbase-realtime","mimeType":"application/json","payTo":"0x5e6E0aa1dE2FD4A4def32CD39aD3F775461E512c","extra":{"name":"USD Coin","version":"2"}},
-      {"scheme":"exact","network":"base-sepolia","maxAmountRequired":"0.125000","resource":"https://x402-crypto.vercel.app/api/coinbase","mimeType":"application/json","payTo":"0x5e6E0aa1dE2FD4A4def32CD39aD3F775461E512c","extra":{"name":"USD Coin","version":"2"}},
-      {"scheme":"exact","network":"base-sepolia","maxAmountRequired":"0.075000","resource":"https://x402-crypto.vercel.app/api/wallet-validator","mimeType":"application/json","payTo":"0x5e6E0aa1dE2FD4A4def32CD39aD3F775461E512c","extra":{"name":"USD Coin","version":"2"}},
-      {"scheme":"exact","network":"base-sepolia","maxAmountRequired":"0.075000","resource":"https://x402-crypto.vercel.app/api/crypto-list","mimeType":"application/json","payTo":"0x5e6E0aa1dE2FD4A4def32CD39aD3F775461E512c","extra":{"name":"USD Coin","version":"2"}},
-      {"scheme":"exact","network":"base-sepolia","maxAmountRequired":"0.100000","resource":"https://x402-crypto.vercel.app/api/chaincheck","mimeType":"application/json","payTo":"0x5e6E0aa1dE2FD4A4def32CD39aD3F775461E512c","extra":{"name":"USD Coin","version":"2"}},
-      {"scheme":"exact","network":"base-sepolia","maxAmountRequired":"0.100000","resource":"https://x402-crypto.vercel.app/api/ton-fragment","mimeType":"application/json","payTo":"0x5e6E0aa1dE2FD4A4def32CD39aD3F775461E512c","extra":{"name":"USD Coin","version":"2"}},
-      {"scheme":"exact","network":"base-sepolia","maxAmountRequired":"0.075000","resource":"https://x402-crypto.vercel.app/api/cryptography","mimeType":"application/json","payTo":"0x5e6E0aa1dE2FD4A4def32CD39aD3F775461E512c","extra":{"name":"USD Coin","version":"2"}}
+      {
+        "scheme": "exact",
+        "network": "base-sepolia",
+        "maxAmountRequired": "0.075000",
+        "resource": "https://x402-crypto.vercel.app/api/crypto-news",
+        "mimeType": "application/json",
+        "payTo": "0x5e6E0aa1dE2FD4A4def32CD39aD3F775461E512c",
+        "extra": {
+          "name": "USD Coin",
+          "version": "2"
+        }
+      },
+      {
+        "scheme": "exact",
+        "network": "base-sepolia",
+        "maxAmountRequired": "0.075000",
+        "resource": "https://x402-crypto.vercel.app/api/crypto-news51",
+        "mimeType": "application/json",
+        "payTo": "0x5e6E0aa1dE2FD4A4def32CD39aD3F775461E512c",
+        "extra": {
+          "name": "USD Coin",
+          "version": "2"
+        }
+      },
+      {
+        "scheme": "exact",
+        "network": "base-sepolia",
+        "maxAmountRequired": "0.075000",
+        "resource": "https://x402-crypto.vercel.app/api/crypto-news16",
+        "mimeType": "application/json",
+        "payTo": "0x5e6E0aa1dE2FD4A4def32CD39aD3F775461E512c",
+        "extra": {
+          "name": "USD Coin",
+          "version": "2"
+        }
+      },
+      {
+        "scheme": "exact",
+        "network": "base-sepolia",
+        "maxAmountRequired": "0.075000",
+        "resource": "https://x402-crypto.vercel.app/api/crypto-news54",
+        "mimeType": "application/json",
+        "payTo": "0x5e6E0aa1dE2FD4A4def32CD39aD3F775461E512c",
+        "extra": {
+          "name": "USD Coin",
+          "version": "2"
+        }
+      },
+      {
+        "scheme": "exact",
+        "network": "base-sepolia",
+        "maxAmountRequired": "0.050000",
+        "resource": "https://x402-crypto.vercel.app/api/password-gen",
+        "mimeType": "application/json",
+        "payTo": "0x5e6E0aa1dE2FD4A4def32CD39aD3F775461E512c",
+        "extra": {
+          "name": "USD Coin",
+          "version": "2"
+        }
+      },
+      {
+        "scheme": "exact",
+        "network": "base-sepolia",
+        "maxAmountRequired": "0.100000",
+        "resource": "https://x402-crypto.vercel.app/api/apiton",
+        "mimeType": "application/json",
+        "payTo": "0x5e6E0aa1dE2FD4A4def32CD39aD3F775461E512c",
+        "extra": {
+          "name": "USD Coin",
+          "version": "2"
+        }
+      },
+      {
+        "scheme": "exact",
+        "network": "base-sepolia",
+        "maxAmountRequired": "0.100000",
+        "resource": "https://x402-crypto.vercel.app/api/crypto-exchange",
+        "mimeType": "application/json",
+        "payTo": "0x5e6E0aa1dE2FD4A4def32CD39aD3F775461E512c",
+        "extra": {
+          "name": "USD Coin",
+          "version": "2"
+        }
+      },
+      {
+        "scheme": "exact",
+        "network": "base-sepolia",
+        "maxAmountRequired": "0.100000",
+        "resource": "https://x402-crypto.vercel.app/api/screener-official",
+        "mimeType": "application/json",
+        "payTo": "0x5e6E0aa1dE2FD4A4def32CD39aD3F775461E512c",
+        "extra": {
+          "name": "USD Coin",
+          "version": "2"
+        }
+      },
+      {
+        "scheme": "exact",
+        "network": "base-sepolia",
+        "maxAmountRequired": "0.100000",
+        "resource": "https://x402-crypto.vercel.app/api/screener",
+        "mimeType": "application/json",
+        "payTo": "0x5e6E0aa1dE2FD4A4def32CD39aD3F775461E512c",
+        "extra": {
+          "name": "USD Coin",
+          "version": "2"
+        }
+      },
+      {
+        "scheme": "exact",
+        "network": "base-sepolia",
+        "maxAmountRequired": "0.125000",
+        "resource": "https://x402-crypto.vercel.app/api/coinbase-realtime",
+        "mimeType": "application/json",
+        "payTo": "0x5e6E0aa1dE2FD4A4def32CD39aD3F775461E512c",
+        "extra": {
+          "name": "USD Coin",
+          "version": "2"
+        }
+      },
+      {
+        "scheme": "exact",
+        "network": "base-sepolia",
+        "maxAmountRequired": "0.125000",
+        "resource": "https://x402-crypto.vercel.app/api/coinbase",
+        "mimeType": "application/json",
+        "payTo": "0x5e6E0aa1dE2FD4A4def32CD39aD3F775461E512c",
+        "extra": {
+          "name": "USD Coin",
+          "version": "2"
+        }
+      },
+      {
+        "scheme": "exact",
+        "network": "base-sepolia",
+        "maxAmountRequired": "0.075000",
+        "resource": "https://x402-crypto.vercel.app/api/wallet-validator",
+        "mimeType": "application/json",
+        "payTo": "0x5e6E0aa1dE2FD4A4def32CD39aD3F775461E512c",
+        "extra": {
+          "name": "USD Coin",
+          "version": "2"
+        }
+      },
+      {
+        "scheme": "exact",
+        "network": "base-sepolia",
+        "maxAmountRequired": "0.075000",
+        "resource": "https://x402-crypto.vercel.app/api/crypto-list",
+        "mimeType": "application/json",
+        "payTo": "0x5e6E0aa1dE2FD4A4def32CD39aD3F775461E512c",
+        "extra": {
+          "name": "USD Coin",
+          "version": "2"
+        }
+      },
+      {
+        "scheme": "exact",
+        "network": "base-sepolia",
+        "maxAmountRequired": "0.100000",
+        "resource": "https://x402-crypto.vercel.app/api/chaincheck",
+        "mimeType": "application/json",
+        "payTo": "0x5e6E0aa1dE2FD4A4def32CD39aD3F775461E512c",
+        "extra": {
+          "name": "USD Coin",
+          "version": "2"
+        }
+      },
+      {
+        "scheme": "exact",
+        "network": "base-sepolia",
+        "maxAmountRequired": "0.100000",
+        "resource": "https://x402-crypto.vercel.app/api/ton-fragment",
+        "mimeType": "application/json",
+        "payTo": "0x5e6E0aa1dE2FD4A4def32CD39aD3F775461E512c",
+        "extra": {
+          "name": "USD Coin",
+          "version": "2"
+        }
+      },
+      {
+        "scheme": "exact",
+        "network": "base-sepolia",
+        "maxAmountRequired": "0.075000",
+        "resource": "https://x402-crypto.vercel.app/api/cryptography",
+        "mimeType": "application/json",
+        "payTo": "0x5e6E0aa1dE2FD4A4def32CD39aD3F775461E512c",
+        "extra": {
+          "name": "USD Coin",
+          "version": "2"
+        }
+      }
     ]
   },
   "paths": {
-    "/api/crypto-news": {"get":{"summary":"Proxy to cryptocurrency-news2","responses":{"200":{"description":"Success"},"402":{"description":"Payment required"}}}},
-    "/api/crypto-news51": {"get":{"summary":"Proxy to crypto-news51","responses":{"200":{"description":"Success"},"402":{"description":"Payment required"}}}},
-    "/api/crypto-news16": {"get":{"summary":"Proxy to crypto-news16","responses":{"200":{"description":"Success"},"402":{"description":"Payment required"}}}},
-    "/api/crypto-news54": {"get":{"summary":"Proxy to crypto-news54","responses":{"200":{"description":"Success"},"402":{"description":"Payment required"}}}},
-    "/api/password-gen": {"get":{"summary":"Proxy to password-generator-api-apiverve","responses":{"200":{"description":"Success"},"402":{"description":"Payment required"}}}},
-    "/api/apiton": {"get":{"summary":"Proxy to apiton","responses":{"200":{"description":"Success"},"402":{"description":"Payment required"}}}},
-    "/api/crypto-exchange": {"get":{"summary":"Proxy to real-time-crypto-exchange","responses":{"200":{"description":"Success"},"402":{"description":"Payment required"}}}},
-    "/api/screener-official": {"get":{"summary":"Proxy to crypto-screener-official","responses":{"200":{"description":"Success"},"402":{"description":"Payment required"}}}},
-    "/api/screener": {"get":{"summary":"Proxy to crypto-screener","responses":{"200":{"description":"Success"},"402":{"description":"Payment required"}}}},
-    "/api/coinbase-realtime": {"get":{"summary":"Proxy to coinbase-crypto-realtime-data","responses":{"200":{"description":"Success"},"402":{"description":"Payment required"}}}},
-    "/api/coinbase": {"get":{"summary":"Proxy to coinbase-crypto","responses":{"200":{"description":"Success"},"402":{"description":"Payment required"}}}},
-    "/api/wallet-validator": {"get":{"summary":"Proxy to crypto-wallet-address-validator1","responses":{"200":{"description":"Success"},"402":{"description":"Payment required"}}}},
-    "/api/crypto-list": {"get":{"summary":"Proxy to fetches-cryptocurrencies-list1","responses":{"200":{"description":"Success"},"402":{"description":"Payment required"}}}},
-    "/api/chaincheck": {"get":{"summary":"Proxy to chaincheck","responses":{"200":{"description":"Success"},"402":{"description":"Payment required"}}}},
-    "/api/ton-fragment": {"get":{"summary":"Proxy to ton-fragment","responses":{"200":{"description":"Success"},"402":{"description":"Payment required"}}}},
-    "/api/cryptography": {"get":{"summary":"Proxy to cryptography-apis","responses":{"200":{"description":"Success"},"402":{"description":"Payment required"}}}}
+    "/api/crypto-news": {
+      "get": {
+        "summary": "Proxy to cryptocurrency-news2",
+        "responses": {
+          "200": {
+            "description": "Success"
+          },
+          "402": {
+            "description": "Payment required"
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "query"
+                ],
+                "properties": {
+                  "query": {
+                    "type": "string",
+                    "description": "Input query or parameters"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/crypto-news51": {
+      "get": {
+        "summary": "Proxy to crypto-news51",
+        "responses": {
+          "200": {
+            "description": "Success"
+          },
+          "402": {
+            "description": "Payment required"
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "query"
+                ],
+                "properties": {
+                  "query": {
+                    "type": "string",
+                    "description": "Input query or parameters"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/crypto-news16": {
+      "get": {
+        "summary": "Proxy to crypto-news16",
+        "responses": {
+          "200": {
+            "description": "Success"
+          },
+          "402": {
+            "description": "Payment required"
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "query"
+                ],
+                "properties": {
+                  "query": {
+                    "type": "string",
+                    "description": "Input query or parameters"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/crypto-news54": {
+      "get": {
+        "summary": "Proxy to crypto-news54",
+        "responses": {
+          "200": {
+            "description": "Success"
+          },
+          "402": {
+            "description": "Payment required"
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "query"
+                ],
+                "properties": {
+                  "query": {
+                    "type": "string",
+                    "description": "Input query or parameters"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/password-gen": {
+      "get": {
+        "summary": "Proxy to password-generator-api-apiverve",
+        "responses": {
+          "200": {
+            "description": "Success"
+          },
+          "402": {
+            "description": "Payment required"
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "query"
+                ],
+                "properties": {
+                  "query": {
+                    "type": "string",
+                    "description": "Input query or parameters"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/apiton": {
+      "get": {
+        "summary": "Proxy to apiton",
+        "responses": {
+          "200": {
+            "description": "Success"
+          },
+          "402": {
+            "description": "Payment required"
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "query"
+                ],
+                "properties": {
+                  "query": {
+                    "type": "string",
+                    "description": "Input query or parameters"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/crypto-exchange": {
+      "get": {
+        "summary": "Proxy to real-time-crypto-exchange",
+        "responses": {
+          "200": {
+            "description": "Success"
+          },
+          "402": {
+            "description": "Payment required"
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "query"
+                ],
+                "properties": {
+                  "query": {
+                    "type": "string",
+                    "description": "Input query or parameters"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/screener-official": {
+      "get": {
+        "summary": "Proxy to crypto-screener-official",
+        "responses": {
+          "200": {
+            "description": "Success"
+          },
+          "402": {
+            "description": "Payment required"
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "query"
+                ],
+                "properties": {
+                  "query": {
+                    "type": "string",
+                    "description": "Input query or parameters"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/screener": {
+      "get": {
+        "summary": "Proxy to crypto-screener",
+        "responses": {
+          "200": {
+            "description": "Success"
+          },
+          "402": {
+            "description": "Payment required"
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "query"
+                ],
+                "properties": {
+                  "query": {
+                    "type": "string",
+                    "description": "Input query or parameters"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/coinbase-realtime": {
+      "get": {
+        "summary": "Proxy to coinbase-crypto-realtime-data",
+        "responses": {
+          "200": {
+            "description": "Success"
+          },
+          "402": {
+            "description": "Payment required"
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "query"
+                ],
+                "properties": {
+                  "query": {
+                    "type": "string",
+                    "description": "Input query or parameters"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/coinbase": {
+      "get": {
+        "summary": "Proxy to coinbase-crypto",
+        "responses": {
+          "200": {
+            "description": "Success"
+          },
+          "402": {
+            "description": "Payment required"
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "query"
+                ],
+                "properties": {
+                  "query": {
+                    "type": "string",
+                    "description": "Input query or parameters"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/wallet-validator": {
+      "get": {
+        "summary": "Proxy to crypto-wallet-address-validator1",
+        "responses": {
+          "200": {
+            "description": "Success"
+          },
+          "402": {
+            "description": "Payment required"
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "query"
+                ],
+                "properties": {
+                  "query": {
+                    "type": "string",
+                    "description": "Input query or parameters"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/crypto-list": {
+      "get": {
+        "summary": "Proxy to fetches-cryptocurrencies-list1",
+        "responses": {
+          "200": {
+            "description": "Success"
+          },
+          "402": {
+            "description": "Payment required"
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "query"
+                ],
+                "properties": {
+                  "query": {
+                    "type": "string",
+                    "description": "Input query or parameters"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/chaincheck": {
+      "get": {
+        "summary": "Proxy to chaincheck",
+        "responses": {
+          "200": {
+            "description": "Success"
+          },
+          "402": {
+            "description": "Payment required"
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "query"
+                ],
+                "properties": {
+                  "query": {
+                    "type": "string",
+                    "description": "Input query or parameters"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/ton-fragment": {
+      "get": {
+        "summary": "Proxy to ton-fragment",
+        "responses": {
+          "200": {
+            "description": "Success"
+          },
+          "402": {
+            "description": "Payment required"
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "query"
+                ],
+                "properties": {
+                  "query": {
+                    "type": "string",
+                    "description": "Input query or parameters"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/cryptography": {
+      "get": {
+        "summary": "Proxy to cryptography-apis",
+        "responses": {
+          "200": {
+            "description": "Success"
+          },
+          "402": {
+            "description": "Payment required"
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "query"
+                ],
+                "properties": {
+                  "query": {
+                    "type": "string",
+                    "description": "Input query or parameters"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
