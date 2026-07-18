@@ -1,6 +1,6 @@
 {
   "openapi": "3.1.0",
-  "info": {
+  "info": {"contact": {"email": "sna4an@proton.me"},
     "title": "x402 Crypto APIs",
     "version": "1.0.0",
     "description": "Paid crypto API endpoints powered by x402 micropayments."

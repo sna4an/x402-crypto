@@ -1,14 +1,15 @@
 import { NextResponse } from "next/server";
 
+export const dynamic = "force-dynamic";
+
+const SLUGS = [
+  "apiton", "chaincheck", "coinbase", "coinbase-realtime",
+  "crypto-exchange", "crypto-list", "crypto-news", "crypto-news16",
+  "crypto-news51", "crypto-news54", "cryptography", "password-gen",
+  "screener", "screener-official", "ton-fragment", "wallet-validator"
+];
+
 export async function GET() {
-  return NextResponse.json({
-    x402Version: 1,
-    facilitator: { url: process.env.FACILITATOR_URL || "https://facilitator.payai.network" },
-    paymentRequired: {
-      scheme: "exact",
-      network: "base-sepolia",
-      payTo: process.env.EVM_ADDRESS || "0x5e6E0aa1dE2FD4A4def32CD39aD3F775461E512c",
-      extra: { name: "USD Coin", version: "2" },
-    },
-  });
+  const resources = SLUGS.map((slug) => `https://x402-crypto.vercel.app/api/${slug}`);
+  return NextResponse.json({ version: 1, resources });
 }
